@@ -1,3 +1,15 @@
+#' Get Boundary Area
+#'
+#' This function allows you to get the boundary areas of a categorized group of Lat/Long points
+#' @param category Vector of categories
+#' @param lat The latitude of the points
+#' @param lng The longitude of the points
+#' @keywords boundary
+#' @export
+#' @examples
+#' @getBoudnaryArea()
+
+
 getBoundaryArea <- function(category, lat, lng){
 
   # Required Library
