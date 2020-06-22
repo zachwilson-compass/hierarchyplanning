@@ -16,7 +16,7 @@ getBoundaryArea <- function(category, lat, lng){
   library(dplyr)
 
   # Creates Initial Data Frame
-  dat <- data.frame(category = category, Latitude = x, Longitude = y )
+  dat <- data.frame(category = category, Latitude = lat, Longitude = lng )
 
   # Unique list of categories
   categories <- dat %>%
