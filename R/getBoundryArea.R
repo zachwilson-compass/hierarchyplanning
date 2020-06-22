@@ -31,7 +31,7 @@ getBoundaryArea <- function(category, lat, lng){
     # Subsets data to just the current category
     category_data <- dat %>%
       filter(category == cat) %>%
-      row_to_column("point_id")
+      rowid_to_column("point_id")
 
     # Determines Convex Hull and Gives the points a sequence ID
     boundary_points <- data.frame(point_id = chull(category_data$Latitude, category_data$Longitude))
