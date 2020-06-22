@@ -39,7 +39,7 @@ getBoundaryArea <- function(category, lat, lng){
     boundary_points$point_order <- seq.int(nrow(boundary_points))
 
     # Adds routing into original data frame ane removes NAs
-    polygon <- dat %>%
+    polygon <- category_data %>%
       left_join(boundary_points) %>%
       na.omit() %>%
       arrange(point_order)
