@@ -46,7 +46,7 @@ getBoundaryArea <- function(category, lat, lng){
 
     # Adds first point onto the end (Used for KML Polygons)
     polygon <- polygon %>%
-      bind_rows [route[1,]]
+      bind_rows (polygon[1,])
 
 
     if (first == TRUE){
